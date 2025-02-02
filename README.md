@@ -1,28 +1,17 @@
-#### Technical Skills: Python, SQL, Spark, Airflow
+#### Technical Skills: Python, Spark, SQL, HDFS, Airflow
 
 ## Education	 			        		
 - B.S., Data Science | University of California, San Diego (_June 2022_)
 
 ## Work Experience
 **TG360 Technologies — 데이터전략본부 데이터분석팀 (_2022.10 - 2024.10_)** (산업기능요원)
-- 디지털 로그 데이터를 활용하여 고객의 성별, 게임 관심 여부, 대학 관련 여부를 예측하는 모델, 로직 개발.
-HDFS에 저장된 데이터를 Pyspark SQL을 활용하여 접속 및 활용.
-- 성별 예측 모델 개발
-GAID, IDFA의 앱 방문 기록을 기반으로 앱 방문 횟수를 피쳐로 활용한 고객의 성별을 예측하는 모델 개발
-데이터 전처리와 피쳐 선별을 통해 모델의 성별 예측 정확도 4~6% 향상
-- 대학교 관련여부를 판단하는 분류 로직 개발
-공공데이터 API를 활용하여 대학교 홈페이지를 호스팅하는 네임서버의 IP주소 정보 수집
-앱별 연간 접속 수를 분석하고 주간 접속 수의 유사도를 활용하여 이상치 제거
-대학교 관련 GAID, IDFA의 학생 여부 추정을 위한 K-means 클러스터링 모델 개발
-대학교 관련 GAID, IDFA 추출 및 이상치 제거 작업 에어플로우자동화
-- 게임 앱 관심 여부를 예측하는 모델 개발
-GAID, IDFA의 앱 방문 기록을 기반으로 고객의 게임앱 관심 여부를 예측하는 다항 기호 모델 개발
-관심 여부를 정의하는 과정에서 방문 일수와 가중된 앱별 접속횟수를 혼합 활용 후 모델의 게임 관심 여부 예측 정확도 10% 향상
-- 데이터 파이프라인 정리, 간소화 및 파이썬 변환
+- GAID, IDFA의 앱 방문 데이터를 기반으로 ID 소유자의 성별을 예측하는 모델 개발. 기존 모델 대비 각 성별 예측 정확도 4%, 6% 향상
+- GAID, IDFA의 대학생 여부를 예측하는 K-means 클러스터링 모델 개발. ID의 접속 IP와 시간대를 활용하여 이상치 제거. 이상치 제거 작업 및 모델 예측 작업 에어플로우 자동화.
+- 기존 SQL 데이터 파이프라인 효율화 및 파이썬 변환
 
 
 ## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
+### 머신러닝/딥러닝 모델의 복잡도와 오염된 훈련 데이터의 관계
 [Publication](https://www.mdpi.com/1424-8220/22/8/3048)
 
 Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
